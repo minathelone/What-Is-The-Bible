@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Canon</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Eagle+Lake&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Qwigley&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+  <!-- google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=synagogue" />
+
+   <!--  bootstrap  -->
+   <link 
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+   rel="stylesheet" 
+   integrity="sha384-AQf4fTycFk0NWoMluugQQczFI7jbtt8gNBcktuMMdS6qW6V1gASZj0R/AcDGOp8U" 
+   crossorigin="anonymous">
+
+  <!-- Custom style for timeline -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".scroll-navbar" data-bs-offset="8vh" class="scrollspy-example">
+  <div id="wrapper">
+
+    <div id="main-content">
+
+        <!-- NAVBAR -->
+        <div class="scroll-navbar">
+            <a href="#intro" class="nav-link">Intro</a>
+            <a href="#ot" class="nav-link">Torah</a>
+            <a href="#nt" class="nav-link">New Testament</a>
+            <a href="#map-container" class="nav-link">Transmission</a>
+            <a href="#preserve" class="nav-link">Preservation</a>
+            <!-- <a href="#timeline" class="nav-link">Timeline</a> -->
+            <a href="#importance" class="nav-link">Significance</a>
+        </div>
+    
+        <!-- TITLE PAGE -->
+        <div id ="top" class="title-card">
+        <h1>The Canonization of the Bible</h1>
+        </div>
+
+      <!-- WHAT IS THE BIBLE? -->
+            <div class="section" id="intro">
+                <div class="introbg">
+                    <div class="intro-text">
+                        <h1 class="ml10">
+                            <span class="text-wrapper">
+                                <!-- Add the icon here before the text -->
+                            <a href="https://bibleproject.com/explore/video/what-is-bible/" target="_blank"> <span class="material-icons icon">book</span></a>
+                                <span class="letters">What is the Bible?</span>
+                            </span>
+                        </h1>
+                        <p class="fade-slide">The Bible is the religious text of Christianity. It is a historical document that recounts the history of mankind, the teachings of Jesus Christ, and points to the future of the renewal of the earth and God's future plans. It is considered to be the authoritative, living, and inerrant Word of the One True God.</p>
+                
+                        <p class="fade-slide">It consists of 66 books divided across two main sections: the Old Testament and the New Testament. The Old Testament is taken from the Jewish Torah. It contains 39 books starting from Genesis and ending with the book of Malachi. The Old Testament contains the account of the world's creation, the history of Israel and its relationship with their God Yahweh, and prophetic accounts of Israel's future and the arrival of a promised Messiah who will bring Israel's restoration.</p>
+                
+                        <p class="fade-slide">The New Testament contains 27 books starting from Matthew and ending with Revelation. It contains historical records of Jesus' teachings and his life on earth, including his death and resurrection. It recounts the history of the early Church following the resurrection of Christ, as well as letters written from various apostles and followers of Christ containing doctrinal instruction to the churches of their eras.</p>
+        
+                    </div>
+                </div>
+            </div>
+
+        <!-- OT CANON -->
+        <div class="section" id="ot">
+            <div class="content">
+        
+                    <img class="section-icon1" src="images/book.png" alt="Torah Icon">
+                    <h1 class="ml13">
+                        The Old
+                    </h1>
+            
+                <p id="scrollable-paragraph">
+                    In Hebrew tradition, what was considered to be the "Word of God" was conveyed orally according to "divine utterance" such as "Thus says the Lord" - These were spoken from direct experiences with God. <br>
+                    Oral convention was then translated into writing either simultaneously at the time of the event (Moses inscribing the ten commandments) or at a time after the event occurred.<br>
+                    The canon of the OT had been established by the time of Jesus Christ, and as early as c400BCE. The Jewish scholar Flavius Josephus is recorded recognizing the modern canon in his time (c.100AD). <br>
+                    <br><strong>Criteria for canonicity:</strong><br>
+                    1. Recognition of divine inspiration <br>
+                    2. Authorship from divinely appointed office<br>
+                    3. Internal consistency <br>
+                    4. The Scriptures that were used and recognized by the nation of Israel was considered the canon<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- OT CANON: JOSEPHUS QUOTE -->
+        <div class="section" id="flauv">
+        <img src="images/flauvius.jpg" id="flauvius">
+        <p id="target" class="dancing-script-mina">"“We have but twenty-two [books] containing the history of all time... And how firmly we have given credit to those books...is evident by what we do… no has been so bold as either to add anything to them or take anything from them, or to make any change in them-, but it becomes natural to all Jews... from their very birth, to esteem those books... and if occasion be, willing to die for them. — Flauvius Josephus" </p>
+        </div>
+
+         <!-- NT CANON -->
+        <div class="section" id="nt">
+            <div class="content">
+                <img class="section-icon2" src="images/church.png" alt="Church Icon">
+                <h1 class="ml12">The New</h1>
+                
+                <p>
+                    The New Testament was written between 30-100AD, after the recorded time of Jesus' death and resurrection. The Gospels and epistles circulated among Christian communities, valued for connection to apostolic authority<br>
+                    In the 3rd century, the Greek philosopher Origen was the first to coin the term "New Testament", and created a list of the 27 books we consider today to be the complete New Testament.
+                    <br><strong>Criteria for canonicity:</strong> <br>
+                    1. Was the author an apostle or have a close connection with an apostle? <br>
+                    2. Is the book being accepted by the body of Christ at large? <br>
+                    3. Did the book contain consistency of doctrine and orthodox teaching? <br> 
+                    4. Did the book bear evidence of high moral and spiritual values that would reflect a work of the Holy Spirit?  <br>
+                </p>
+            </div>  
+        </div>
+
+        <!-- TRANMISSION OF TEXTS: MAP -->
+        <div class="section" id="map-container">  
+            <div class="heading-container">
+                <img class="section-icon3" src="images/boat.png" alt="Boat Icon">
+                <h1>Early Transmission of Texts</h1>
+            </div>
+            <div class="content">
+                <div id="map"></div>
+                <div class="text">
+                    <p>The seven churches of Asia Minor—<span class="highlight" style="color:#FF6347;">Ephesus</span>,<span class="highlight" style="color:#4682B4;"> Smyrna</span>, <span class="highlight" style="color:#32CD32;">Pergamum</span>, <span class="highlight" style="color:#FFD700;">Thyatira</span>, <span class="highlight" style="color:#7b5cd3;">Sardis</span>, <span class="highlight" style="color:#bd5c6e;">Philadelphia</span>, and <span class="highlight" style="color:#20B2AA;">Laodicea</span>—played a pivotal role in the early transmission and preservation of New Testament writings. These churches, referenced in the Book of Revelation, were situated in present-day Turkey and served as key centers for the dissemination of early Christian texts.</p>
+                    <p>The apostles and early church leaders wrote letters (epistles) to these churches, addressing theological matters and offering guidance for Christian living. For instance, Paul's letters to the Ephesians and the Colossians are thought to have been circulated among these communities.</p>
+                    <p>The proximity of these churches to major trade routes facilitated the spread of manuscripts across the Roman Empire. From Asia Minor, texts reached other Christian communities in Greece, Rome, and beyond.</p>
+                    <p>Scribes in these regions played a crucial role in preserving the accuracy of texts. Variants in manuscripts emerged due to copying errors or local traditions, but core teachings remained consistent.</p>
+                    <p>Over time, these early fragments and letters were compiled into codices (book-like formats), a transition from individual scrolls that enhanced usability and protection of the texts.</p>
+                </div>
+            </div>
+        </div> 
+
+       <!--  video -->
+        <div class="section" id="video">
+            <div class="cont">
+                <video controls id='vp' muted loop autoplay>
+                    <source src="images/The Earliest Christians Didn't Have a Bible_.mp4" type="video/MP4" />
+                </video>
+
+            </div>
+        </div>
+
+        <!-- PRESERVATION -->
+        <div class="section" id="preserve">
+            <div class="content">
+                <img class="section-icon4" src="images/search.png" alt="Boat Icon">
+                <h1 class="ml1">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Preservation</span>
+                        <span class="line line2"></span>
+                    </span>
+                </h1>
+                <p>
+                    The preservation of the Bible over time is remarkable, especially considering its long history and the challenges of maintaining textual integrity. Its preservation is attested by:
+                    <br>
+                    <span class="fade-item"><b>1. The sheer number of manuscript copies </b>is unprecedented in the history of ancient texts: With over 5,865 partial and complete manuscripts written in Greek, the Bible stands as one of the most well-preserved texts from antiquity. These manuscripts allow scholars to confidently reconstruct the original texts.</span>
+                    <br>
+                    <span class="fade-item"><b>2. The proximity of New Testament fragments to the time of the original writings</b>—ranging from just 30 to 300 years after the originals. This is a remarkably short time span compared to other ancient documents, which often have much longer gaps.</span>
+                    <br>
+                    <span class="fade-item"><b>3. Discoveries like the Dead Sea Scrolls</b> in 1947: The scrolls, particularly the Isaiah manuscript, have shown an incredible match to the traditional biblical text, even after 900 years. The Bible’s core teachings have remained remarkably consistent through the centuries.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- TIMELINE -->
+        <!-- <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline" id="timeline"></div>
+        </div> -->
+
+        <!-- IMPORTANCE -->
+        <div class="section" id="importance">
+            <div class="heading-container">
+              <img class="section-icon5" src="images/cross.png" alt="Cross Icon">
+              <h1>The Significance</h1>
+            </div>
+            <p id="importance-text">Beyond being a rich historical and cultural document, the true value of the Bible lies in its claim <br>
+            to be the word and message of the One True God. The Bible shares with the world the truth that God is real, God is good, <br>
+            and that God has extended perfect peace, satisfaction, and hope through His Son Jesus Christ despite the <br>
+            current brokenness of the world today. Whether you believe in God or not, the Bible holds great moral teachings and <br>
+            historical significance, and continues to be a text that shapes many lives in the world today. </p>
+            <p>Here are a few verses that speak to the worth of Scripture:</p>
+
+            <div id="bible-carousel">
+                <div class="verse-container">
+                  <div class="verse">"Turn my eyes from looking at worthless things; and give me life in your ways.<br>
+                    Behold, I long for your precepts; in your righteousness give me life!"<br> - Psalm 119:37,40</div>
+                  <div class="verse">"All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness."<br> -2 Timothy 3:16</div>
+                  <div class="verse">"Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me."<br> - John 14:6</div>
+                  <div class="verse">"The fear of the Lord is a fountain of life, that one may avoid the snares of death."<br> - Proverbs 14:27</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section" id="sources">
+            <h1>Sources</h1>
+            <div class="sources-grid">
+                <p><a href="https://www.gotquestions.org/canon-Bible.html" target="_blank">Got Questions: Canon of the Bible</a></p>
+                <p><a href="https://christianheritagefellowship.com/canonization-of-the-bible/#Development%20of%20the%20Old%20Testament%20Canon" target="_blank">Christian Heritage Fellowship: Canonization of the Bible</a></p>
+                <p><a href="https://www.newadvent.org/fathers/3816.htm" target="_blank">Council of Carthage: New Advent</a></p>
+                <p><a href="https://www.blueletterbible.org/faq/canon.cfm" target="_blank">Blue Letter Bible: Canon FAQ</a></p>
+                <p><a href="https://zondervanacademic.com/blog/old-testament" target="_blank">Zondervan Academic: Old Testament</a></p>
+                <p><a href="https://www.gotquestions.org/apocrypha-deuterocanonical.html" target="_blank">Got Questions: Apocrypha</a></p>
+                <p><a href="https://courageforlife.org/blog/how-did-we-get-the-new-testament/" target="_blank">Courage for Life: New Testament</a></p>
+                <p><a href="https://rsc.byu.edu/new-testament-history-culture-society/canonization-new-testament" target="_blank">BYU: Canonization of the New Testament</a></p>
+                <p><a href="http://www.ntcanon.org/Athanasius.shtml" target="_blank">NT Canon: Athanasius</a></p>
+                <p><a href="http://helpmewithbiblestudy.org/5Bible/TransCanonCouncils.aspx" target="_blank">Help Me With Bible Study: Canon Councils</a></p>
+                <p><a href="https://calvarychapel.com/posts/were-the-new-testament-manuscripts-copied-accurately/" target="_blank">Calvary Chapel: NT Manuscripts</a></p>
+                <p><a href="https://apologeticspress.org/has-the-bible-been-transmitted-to-us-accurately-5732/" target="_blank">Apologetics Press: Bible Transmission</a></p>
+                <p><a href="https://wycliffe.org.uk/story/a-brief-history-of-bible-translation" target="_blank">Wycliffe: Bible Translation History</a></p>
+                <p><a href="https://carm.org/about-the-bible/the-bible-has-been-translated-so-many-times-can-we-still-trust-it/" target="_blank">CARM: Trusting Bible Translation</a></p>
+            </div>
+            <a href="#top"><button>Back to Top</button></a>
+            
+        </div>
+    </div>
+   <!--  JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- GSAP and Scroll Trigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+
+  <!-- Leaflet for interactive map -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <!--  anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <!-- P5js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+
+  <!-- bootstrap -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FhcRuHlITbnMwttizHcCXK/zXZXkREmrUQ5mdGtnEY/ySfQvCTVL13yIakL9KMGd" 
+    crossorigin="anonymous"></script>
+
+  <script src="timeline.js"></script>
+</body>
+
+</html>
+
+<!-- https://www.azbible.com/christianity-spread-map.html -->

@@ -1,0 +1,1006 @@
+    .eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .raleway-mina {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    .qwigley-regular {
+      font-family: "Qwigley", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .montserrat-mina {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: "Strait", serif;
+      font-weight: 400;
+      font-style: normal;
+      position: relative;
+    }
+    
+    p {
+      font-family: "Raleway";
+      font-weight: 400;
+    }
+    
+    h1 {
+      font-family: "Montserrat";
+    }
+    
+    .section {
+      box-sizing: border-box; /* Includes padding and border in width/height */
+      width: 100%; /* Match the wrapper's width */
+      height: 100vh; /* Full height of the viewport */
+      background-color: rgb(235, 221, 205);
+      display: flex; /* Use Flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+    
+    .scroll-navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #f4e1c3;
+      padding: 5px 5px;
+      border: 2px solid #8b5a2b;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      font-size: 18px;
+      z-index: 1000;
+      height:5vh;
+    }
+    
+  /* navbar */
+  .scroll-navbar a {
+      text-decoration: none;
+      color: #8b5a2b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: all 0.3s ease;
+  }
+
+  .scroll-navbar a:hover {
+      background: #8b5a2b;
+      color: #fff;
+  }
+
+  .nav-link.active {
+    background-color: #8b5a2b;
+    color: #fff;
+}
+
+   /*  title card */
+    .title-card {
+      display: flex; /* Use Flexbox for content alignment */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically*/
+      background-image:url(images/openbook.jpg);
+      background-size:cover;
+      height:100vh;
+    }
+
+    .title-card h1 {
+      color:white;
+      font-family: "Eagle Lake";
+      font-weight: 600;
+      text-shadow: 0px 0px 40px #000000;
+      font-size: 8vw; /* Make font size responsive */
+      margin: 0;
+      padding: 0;
+      align-self:center;
+      text-align:center;
+    }
+
+    @media (max-width: 1024px) {
+      .title-card h1 {
+        font-size: clamp(2rem, 8vw, 8vh); /* Adjust max size slightly for smaller screens */
+      }
+    }
+    
+    /* For small screens (phones, below 768px) */
+    @media (max-width: 768px) {
+      .title-card h1 {
+        font-size: clamp(1.5rem, 7vw, 7vh); /* Scale down font for small screens */
+        padding: 0 2%; /* Add a bit more padding for edge space */
+      }
+    }
+
+    .material-icons.icon {
+      font-size: 3rem; /* Adjust icon size */
+      margin-right: 10px; /* Space between icon and text */
+      vertical-align: middle; /* Aligns the icon with the text */
+      display: inline-block; /* Ensure it's inline with text */
+    }
+
+/* Intro Section Styles */
+
+.ml10 {
+  position: relative;
+  font-size: 4em;
+  font-family:"Eagle Lake";
+  font-weight:700;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+  opacity:0;
+}
+
+#intro {
+  display: flex;              /* Use flexbox for alignment */
+  flex-direction: column;     /* Stack items vertically */
+  justify-content: center;    /* Center content vertically */
+  align-items: center;        /* Center content horizontally */
+  text-align: center;         /* Align text in the center */
+  padding: 5vh 5%;            /* Add padding for spacing */
+  height: 100vh;              /* Full height of the viewport */
+  box-sizing: border-box;     /* Include padding and border in dimensions */
+  overflow-y: auto;           /* Enable scrolling if content overflows */
+}
+
+#intro {
+  background-image:url("images/trent.webp");
+  background-size:cover;
+}
+
+.intro-text{
+  color:white;
+  padding:30px;
+  border-radius:10px;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+#intro h1 {
+  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font scaling */
+  font-family: "Eagle Lake", serif;
+  margin-bottom: 2vh;         /* Space below the heading */
+  margin-top: 5vh;
+}
+
+a .material-icons.icon {
+  color: white; /* Default color */
+  font-size: 36px; /* Icon size */
+  transition: color 0.3s, transform 0.3s ease; /* Smooth effects */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+#intro p {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font scaling for paragraphs */
+  line-height: 1.6;           /* Add spacing between lines for readability */
+  margin-bottom: 2vh;         /* Space below each paragraph */
+}
+
+/* For medium screens (tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  #intro {
+    padding: 5vh 10%;         /* Increase padding for smaller screens */
+  }
+
+  #intro p {
+    font-size: clamp(1rem, 3vw, 1.1rem); /* Slightly smaller font size */
+  }
+}
+
+/* For small screens (phones, below 768px) */
+@media (max-width: 768px) {
+  #intro {
+    padding: 5vh 5%;          /* Adjust padding for narrow screens */
+    overflow-y: auto;         /* Ensure scrolling for small screens */
+  }
+
+  #intro p {
+    font-size: clamp(0.9rem, 3vw, 1rem); /* Smaller font size for phones */
+    margin-bottom: 1.5vh;     /* Reduce spacing between paragraphs */
+  }
+}
+
+/* General Styling for the Section */
+#ot {
+  background-size: cover;
+  background-image:url(images/ot.jpeg);
+  display: flex;
+  flex-direction: column; /* Stack elements on smaller screens */
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  height: 100vh;
+  justify-content:flex-end;
+  overflow-y:auto;
+}
+
+#ot::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/ot.jpeg) center/cover no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* Flexbox Layout for Content */
+#ot .content {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout for larger screens */
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center; /* Vertically align elements */
+  gap: 20px; /* Add spacing between elements */
+  z-index: 1;
+  position: relative;
+  height:80vh;
+
+}
+
+/* Styling for Header (H1) */
+#ot h1 {
+  width: 40%; /* Occupies 40% of the section's width */
+  align-self: flex-end;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  line-height: 1.4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: clamp(1.5rem, 3vw, 5rem); /* Responsive font size */
+  text-align: center;
+  
+}
+
+.section-icon1 {
+  width: 10vh; /* Adjust size of the image */
+  height: 10vh;
+  vertical-align: middle; /* Align the image with the text */
+  align-self:flex-end;
+  
+}
+
+/* Styling for Paragraphs (P) */
+#ot p {
+  height: 100%;
+  align-self:flex-end;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding:10px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: clamp(0.9rem, 1.6vw, 2rem); /* Responsive font size */
+  line-height: 1.6;
+  text-align: center; /* Align text for better readability */
+  width: 50%;
+  align-self:flex-end;
+  overflow-y:auto;
+  
+}
+
+/* For Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  #ot .content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  #ot h1 {
+    width: 90%; /* Full width */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #ot p {
+    width: 90%; /* Full width */
+    font-size: clamp(0.9rem, 2vw, 1rem); /* Slightly smaller text */
+  }
+}
+
+/* For Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+  #ot h1 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem); /* Smaller font size for mobile */
+    padding: 10px 15px;
+  }
+
+  #ot p {
+    font-size: clamp(0.8rem, 3vw, 1rem); /* Smaller text */
+    padding: 15px;
+    max-height: 60vh; /* Reduce max height to fit smaller screens */
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place behind content */
+}
+
+.section-icon2 {
+  width: 15vh; /* Adjust size of the image */
+  height: 15vh;
+  vertical-align: middle; /* Align the image with the text */
+  align-self:flex-end;
+}
+
+/* flaivius text  */
+
+#target {
+  position: relative;
+  top: 15%;
+  transform: translateY(-50%);
+  padding: 20px;
+  font-family: "Qwigley", cursive;
+  font-size: 9vh; /* Scalable font size */
+  line-height: 1.6;
+  max-height: 80%; /* Prevent text from overflowing into other sections */
+  opacity: 0;
+  overflow-y: auto; /* Ensure the text doesn't overflow */
+}
+
+#flauv {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 10px; 
+  background-image: url("images/paper.jpg");
+  background-size: cover;
+  padding: 10px; /* Add padding to give space around content */
+  min-height: 100vh; /* Ensure the section has at least full viewport height */
+  overflow:hidden;
+}
+
+#flauvius {
+  width: 100%; 
+  height: auto; 
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  opacity: 0; 
+  transform: scale(0); 
+}
+
+/* new testament  */
+
+.ml12 {
+  font-weight: 600;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-family:"Montserrat";
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity:0;
+}
+
+#nt {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;     
+  padding: 20px 40px;         
+  position: relative;
+  z-index: -1;
+  justify-content:flex-end;
+  overflow-y:auto;
+}
+
+#nt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/Lord.jpg) center/cover no-repeat;
+  filter: blur(2px);          
+  z-index: -1;                
+}
+
+#nt .content {
+  display: flex;             
+  flex-direction: row-reverse; 
+  justify-content: space-between; 
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  position: relative;
+  gap: 20px;  /* Adds spacing between the image and text */
+  overflow-y:auto;
+}
+
+#nt h1 {
+  width: 60%;                 
+  align-self: flex-end;       
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: #fff;                
+  padding: 10px 20px;        
+  border-radius: 8px;        
+  line-height: 1.6;          
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  font-size: clamp(2rem, 5vw, 3rem); /* Scalable font size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#nt p {
+  width: 50%;  
+  height:100%;              
+  text-align: left;          
+  line-height: 1.6;          
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: #fff;               
+  padding: 20px;             
+  border-radius: 8px;         
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  font-size: clamp(0.9rem, 1.5vw, 2rem); /* Scalable font size */
+  max-height: 80vh; /* Prevent overflow */
+  overflow-y: auto; /* Add scroll if needed */
+  align-self:flex-end;
+}
+
+#nt .section-icon2 {
+height:10vh;
+width:auto;
+align-self:flex-end;
+}
+
+@media (max-width: 1024px) {
+  #nt .content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align elements */
+  }
+
+  #nt h1 {
+    width: 90%; /* Full width on smaller screens */
+    font-size: clamp(2rem, 6vw, 4rem); /* Adjust font size */
+  }
+
+  #nt p {
+    width: 90%; /* Full width for text */
+    font-size: clamp(0.8rem, 3vw, 1.2rem); /* Adjust font size */
+    margin-top: 10px; /* Add spacing on top */
+  }
+
+  #nt .section-icon2 {
+    max-width: 250px; /* Reduce image size */
+  }
+}
+
+@media (max-width: 768px) {
+  #nt h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem); /* Smaller font size for mobile */
+  }
+
+  #nt p {
+    font-size: clamp(0.8rem, 4vw, 1.1rem); /* Smaller text for mobile */
+    max-height: 60vh; /* Reduce max height to fit smaller screens */
+  }
+
+  #nt .section-icon2 {
+    max-width: 200px; /* Further reduce image size */
+  }
+}
+
+/* map content */
+
+#map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image:url(images/mpas.jpg);
+  background-size:cover;
+  overflow-y:auto;
+}
+
+.content {
+  display: flex;                
+  gap: 20px;                    
+  align-items: flex-start;  
+  padding:0;   
+  height:100%;
+  width:100%;
+}
+
+#map { 
+  height: 85%;               
+  width: 50%;                   
+  border: 2px solid black;
+  border-radius:10px;
+}
+
+#map-container h1{
+  padding-top:20vh;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.section-icon3 {
+  width: 8vh; /* Adjust the size of the image */
+  height: 8vh; /* Adjust the size of the image */
+  padding-top:20vh;
+}
+
+/* Text Styling */
+.text {
+  width: 45%; 
+  height:85%;                  
+  font-size: 16px;              
+  line-height: 1.6;             
+  max-height: 85%;
+  overflow-y:scroll;
+  background-color:rgba(0,0,0,0.6);
+  border-radius:10px;
+  color:white;
+  padding:10px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* video */
+
+#video{
+  background-image:url(images/parch.webp);
+  background-size:cover;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in-video{
+  z-index:1000;
+}
+
+.ml13 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+  font-family:"Montserrat";
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity:0;
+}
+
+/* preservation section  */
+
+@keyframes randomZoom {
+  0% {
+    background-size: 100%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-size: 110%;
+    background-position: 30% 40%;
+  }
+  50% {
+    background-size: 120%;
+    background-position: 60% 20%;
+  }
+  75% {
+    background-size: 110%;
+    background-position: 80% 60%;
+  }
+  100% {
+    background-size: 100%;
+    background-position: 0% 0%;
+  }
+}
+
+#preserve::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/seamless.webp) center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  animation: randomZoom 15s infinite alternate; /* Apply random zoom animation */
+}
+
+#preserve {
+  background-size: cover;
+  padding: 10px 5%;
+  position: relative;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 1;
+  overflow:hidden;
+}
+
+#preserve .content {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%; /* Adjust width for smaller screens */
+  margin: 0 auto;
+  transform: translateY(20px); 
+  overflow:hidden;
+  display: flex;
+}
+
+#preserve h1 {
+  font-size: clamp(2rem, 2vw, 6rem);
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  padding: 10px;
+  width: 100%; 
+  align-self:flex-start;
+  display:inline-block;
+
+}
+
+.section-icon4 {
+  width: 7vh; /* Adjust the size of the image */
+  height: 7vh; /* Adjust the size of the image */
+  padding-top:10vh;
+  align-self:flex-start;
+  display:block;
+}
+
+#preserve p {
+  font-size: clamp(0.9rem, 1.8vw, 2rem);
+  line-height: 1.6;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  padding: 10px;
+  overflow-y:auto;
+  align-self:flex-start;
+}
+
+#preserve b {
+    color: #cd9b30;
+}
+
+/* Responsive Design using Media Queries */
+@media (max-width: 768px) {
+  #preserve h1 {
+    font-size: 1.8em; 
+  }
+
+  #preserve p {
+    font-size: 0.95em; 
+  }
+
+  #preserve .content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #preserve {
+    padding: 10px 5%;
+    align-items: flex-start;
+  }
+
+  #preserve h1 {
+    font-size: 1.5em; 
+  }
+
+  #preserve p {
+    font-size: 0.9em; 
+  }
+
+  #preserve .content {
+    padding: 10px;
+    max-width: 100%; 
+  }
+}
+
+.ml1 {
+  font-weight: 600;
+  font-size: 3.5em;
+  font-family:"Montserrat";
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+/*   timeline stuff */
+.timeline-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("images/texts.jpg");
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  padding-left: 50vw;  
+  padding-right: 50vw; 
+  gap: 100px;
+  background-color:rgba(0, 0, 0, 0.7)
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgb(82, 55, 6);
+  z-index: -1;
+}
+
+.event {
+  position: relative;
+  width: 300px;
+  background-color: rgb(59, 40, 5);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.event img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  color: #c8e6c9;
+  margin: 5px 0;
+}
+
+.event-description {
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+#importance {
+  background-image: url(images/bible.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px 10px;
+  position: relative;
+  min-height: 100vh; 
+  display: block; 
+}
+
+.heading-container {
+  display: flex;                /* Align elements horizontally */
+  align-items: center;          /* Align vertically */
+  gap: 10px;                    /* Space between icon and heading */
+  justify-content: center;      /* Center the entire container */
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top:5vh;
+}
+
+.heading-container h1 {
+  font-size: clamp(2rem, 4vw, 3rem); 
+  margin: 0;
+  padding-top: 10px;                
+  display: inline-block;
+  line-height: 1;           
+}
+
+.section-icon5 {
+  width: 8vh;               
+  height: auto;             
+  display: block;
+  margin: 0;                
+}
+
+#importance p {
+  text-align: center;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 90%; 
+  color: white;
+  font-size: clamp(1rem, 2vw, 4rem);
+
+}
+
+#bible-carousel {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('images/background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 2rem);
+}
+
+.verse-container {
+  position: relative;
+  overflow: hidden;
+  height: 100px; /* Adjust based on your content */
+}
+
+.verse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius:10px;
+}
+
+a .material-icons.icon:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+#video {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+}
+
+#video .cont {
+  max-width: 80%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures content stacks vertically */
+}
+
+#vp {
+  max-width: 100%; 
+  height: auto;
+  opacity:0;
+}
+
+#sources {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+#sources h1 {
+  font-size: clamp(2rem, 5vw, 4rem); 
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
+}
+
+.sources-grid p {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.sources-grid p:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.sources-grid a {
+  color: #ffd700; 
+  text-decoration: none;
+}
+
+.sources-grid a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e6c200; /* Slightly darker gold */
+}
+
+a {
+  color: white; /* Default color for the link */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: lightblue; /* Color when hovering */
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
